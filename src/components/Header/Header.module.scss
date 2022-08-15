@@ -1,0 +1,29 @@
+.header{
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__nav{
+        ul{
+            display: flex;
+            list-style-type: none;
+        }
+    }
+    &__phone{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-decoration: none;
+        margin-left: 55px;
+        color: white;
+        transition: all 0.5s ease;
+        &:hover{
+            color: #FCD54C;
+            transition: all 0.5s ease;
+        }
+    }
+    &__contact{
+        display: flex;
+        align-items: center;
+    }
+}

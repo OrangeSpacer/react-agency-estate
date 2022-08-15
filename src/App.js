@@ -1,7 +1,10 @@
+import Main from "./pages/Main";
+import classes from './App.module.scss'
+
 function App() {
   return (
-    <div>
-      hello world
+    <div className={classes.App}>
+      <Main />
     </div>
   );
 }
