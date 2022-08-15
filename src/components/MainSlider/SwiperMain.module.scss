@@ -1,0 +1,94 @@
+.SwiperMain{
+    margin-top: 50px;
+    position: relative;
+}
+
+.swiper-button-next{
+    &::after{
+        content: '';
+    }
+}
+
+.swiper-button-prev{
+    &::after{
+        right: 0;
+    }
+}
+
+.content{
+    width: 714px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 100px;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    background: transparent;
+}
+
+.navigation{
+    z-index: 10000;
+    position: absolute;
+    left: 25%;
+    bottom: 47px;
+}
+
+.divider{
+    position: absolute;
+    left: -10%;
+    bottom: 47px;
+}
+
+
+.prev{
+    cursor: pointer;
+    z-index: 1000;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    background: transparent;
+    &:disabled{
+        opacity: 0.6;
+    }
+    &::before{
+        position: absolute;
+        left: 48%;
+        top: 3px;
+        content: '';
+        height: 20px;
+        width: 2px;
+        background-color: #FFFFFF;
+    }
+}
+
+.next{
+    cursor: pointer;
+    z-index: 1000;
+    border: none;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.2em;
+    color: #FFFFFF;
+    background: transparent;
+    &:disabled{
+        opacity: 0.6;
+    }
+}
+
+.slidesContent{
+    z-index: 2000;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    background: #272727;
+    color: white;
+    right: -1%;
+    bottom: 0px;
+    padding: 60px;
+    max-width: 1080px;
+}

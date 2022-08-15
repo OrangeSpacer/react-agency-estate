@@ -2,7 +2,7 @@ import React from "react";
 import classes from './Header.module.scss'
 import {Link} from 'react-router-dom'
 import Nav from "./Nav";
-import Button from "../Button/Button";
+import Button from "../UI/Button/Button";
 const Header = () => {
     const navItems = [
         {text:"Buy",navLink:"/Blog"},

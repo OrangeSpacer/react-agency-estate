@@ -1,0 +1,21 @@
+.slideActiveBlock{
+    &:not(:last-child){
+        margin-right: 100px;
+    }
+}
+
+.defaultSlide{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 24px;
+    margin-right: 27px;
+    color: #FFFFFF;
+}
+
+.slideText{
+    max-width: 116px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
