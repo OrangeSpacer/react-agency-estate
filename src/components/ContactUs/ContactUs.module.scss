@@ -1,0 +1,38 @@
+.questionBlock{
+    text-align: center;
+    padding: 87px 0;
+}
+.questionText{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    color: #272727;
+}
+
+.title{
+    margin: 15px 0 54px 0;
+    font-weight: 700;
+    font-size: 120px;
+    line-height: 69px;
+    text-align: center;
+    color: #272727;
+}
+
+.questionForm{
+    display: flex;
+    justify-content: center;
+}
+
+.questionInput{
+    border: none;
+    outline: none;
+    width: 472px;
+    padding: 25px 15px 25px 42px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 14px;
+    display: flex;
+    align-items: flex-end;
+    color: #272727;
+}

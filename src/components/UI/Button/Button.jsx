@@ -1,8 +1,8 @@
 import React from "react";
-import classes from './Button.module.scss';
-const Button = ({click,text}) => {
+import './Button.scss';
+const Button = ({click,text,type,disabled}) => {
     return (
-        <button onClick={click} className={classes.modal}>
+        <button onClick={click} className={[type,'btn'].join(' ')} disabled={disabled}>
             {text}
         </button>
     );

@@ -21,7 +21,7 @@ const Header = () => {
                 </ul>
             </nav>
             <div className={classes.header__contact}>
-                <Button text='Book a consultation' click={() => console.log('click')} />
+                <Button text='Book a consultation' click={() => console.log('click')} type='modal'/>
                 <a href="tel:72126742510" className={classes.header__phone}>
                     +7 (212) 674-25-10
                 </a>

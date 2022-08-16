@@ -18,7 +18,7 @@ const ProjectCart = ({title,hoverText,imgPath}) => {
                 :
                 null    
             }
-            <img src={imgPath} className={classes.img}/>
+            <img src={imgPath} className={classes.img} alt="imgHouseType"/>
         </div>
     );
 }
