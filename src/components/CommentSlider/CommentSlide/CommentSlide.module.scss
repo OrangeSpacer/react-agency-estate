@@ -1,0 +1,47 @@
+.commentSlideBlock{
+    height: 311px;
+    width: 525px;
+    margin: 0 auto;
+    border: 1px solid #FCD54C;
+    position: relative;
+}
+
+.commentBullets{
+    margin-top: 20px;
+}
+
+.commentContent{
+    position: relative;
+    margin-top: 80px;
+    padding: 0px 45px 23px 30px;
+    text-align: left;
+}
+
+.commentImg{
+    position: absolute;
+    right: 31px;
+    top: 20px;
+}
+
+.commentName{
+    margin-bottom: 19px;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    color: #FFFFFF;
+}
+
+.commentCompany{
+    margin-bottom: 34px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+
+.comment{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #929292;
+}

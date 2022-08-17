@@ -1,5 +1,6 @@
 import Articles from "../components/Articles/Articles";
 import Comment from "../components/Comment/Commnet";
+import CommentSlider from "../components/CommentSlider/CommentSlider";
 import ContactUs from "../components/ContactUs/ContactUs";
 import Header from "../components/Header/Header";
 import ProjectCart from "../components/LatestProject/ProjectCart";
@@ -34,6 +35,7 @@ const Main = () => {
             <Comment commentText='“Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.”' Author='— Mary Kay Ash'/>
             <ContactUs />
             <Articles/>
+            <CommentSlider/>
         </div>
     );
 }
