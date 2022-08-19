@@ -27,7 +27,6 @@ const MainSlider = () => {
                 spaceBetween={50}
                 modules={[Pagination, Navigation]}
                 className={classes.SwiperMain}
-                onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
             >
                 {sliderSlides.map((item,index) => 

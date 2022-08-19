@@ -3,7 +3,6 @@ import Comment from "../components/Comment/Commnet";
 import CommentSlider from "../components/CommentSlider/CommentSlider";
 import ContactUs from "../components/ContactUs/ContactUs";
 import Faq from "../components/Faq/Faq";
-import Header from "../components/Header/Header";
 import ProjectCart from "../components/LatestProject/ProjectCart";
 import MainSlider from "../components/MainSlider/MainSlider";
 import SmallBlock from "../components/SmallBlockContent/SmallBlock";
@@ -22,7 +21,6 @@ const Main = () => {
     ]
     return (
         <div>
-            <Header />
             <MainSlider />
             <Container>
                 <h2 style={{fontSize: '48px',color: '#FFFFFF',fontWeight: '700',marginTop:'100px',paddingLeft:'350px'}}>

@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import classes from './AccordionItem.module.scss'
 const AccordionItem = ({title,text,click,id,selected}) => {
     return (
