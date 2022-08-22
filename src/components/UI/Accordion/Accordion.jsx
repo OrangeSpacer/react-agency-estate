@@ -5,8 +5,7 @@ const Accordion = ({content}) => {
     const AccordionContent = [...content]
     const [accordionOpen,setAccordionOpen] = useState(null)
     const handlerAccordionClick = (i) => {
-        console.log(i)
-        if(accordionOpen == i){
+        if(accordionOpen === i){
             return setAccordionOpen(null)
         }
         setAccordionOpen(i)

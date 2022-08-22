@@ -1,4 +1,3 @@
-import Container from '../UI/Container/Container'
 import {Link} from 'react-router-dom'
 import classes from './Footer.module.scss'
 import FooterItem from './FooterItem/FooterItem';

@@ -1,0 +1,21 @@
+.mainBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    input{
+        width:  500px;
+        padding: 24px 19px;
+        border: 1px solid #929292;
+        font-size: 18px;
+        color: white;
+        background: transparent;
+    }
+}
+
+.cartItems{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 50px;
+}

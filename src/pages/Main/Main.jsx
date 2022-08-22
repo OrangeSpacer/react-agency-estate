@@ -1,12 +1,12 @@
-import Articles from "../components/Articles/Articles";
-import Comment from "../components/Comment/Commnet";
-import CommentSlider from "../components/CommentSlider/CommentSlider";
-import ContactUs from "../components/ContactUs/ContactUs";
-import Faq from "../components/Faq/Faq";
-import ProjectCart from "../components/LatestProject/ProjectCart";
-import MainSlider from "../components/MainSlider/MainSlider";
-import SmallBlock from "../components/SmallBlockContent/SmallBlock";
-import Container from "../components/UI/Container/Container";
+import Articles from "../../components/Articles/Articles";
+import Comment from "../../components/Comment/Commnet";
+import CommentSlider from "../../components/CommentSlider/CommentSlider";
+import ContactUs from "../../components/ContactUs/ContactUs";
+import Faq from "../../components/Faq/Faq";
+import ProjectCart from "../../components/LatestProject/ProjectCart";
+import MainSlider from "../../components/MainSlider/MainSlider";
+import SmallBlock from "../../components/SmallBlockContent/SmallBlock";
+import Container from "../../components/UI/Container/Container";
 
 
 const Main = () => {

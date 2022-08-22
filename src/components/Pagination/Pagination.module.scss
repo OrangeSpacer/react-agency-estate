@@ -1,0 +1,29 @@
+.paginationItems{
+    margin-top: 50px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.paginateItem{
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    &:not(:last-child){
+        margin-right: 15px;
+    }
+}
+
+.paginateItemActive{
+    padding: 10px 14px;
+    color: #FFFFFF;
+    border: 1px solid #FCD54C;
+    background-color: #FCD54C;
+    &:not(:last-child){
+        margin-right: 15px;
+    }
+}

@@ -1,4 +1,4 @@
-import {Pagination,Navigation} from 'swiper';
+import {Pagination} from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import classes from './CommentSlider.module.scss'
 import 'swiper/css';

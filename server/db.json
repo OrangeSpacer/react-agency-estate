@@ -1,0 +1,76 @@
+{
+    "Blog":[
+        {
+            "id":"1",
+            "imgUrl":"/img/Blog/1.png",
+            "title":"Commercial property in Abu Dhabi",
+            "text":"In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ..."
+        },
+        {
+            "id":"2",
+            "imgUrl":"/img/Blog/2.png",
+            "title":"Private property in Abu Dhabi",
+            "text":"In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ..."
+        },
+        {
+            "id":"3",
+            "imgUrl":"/img/Blog/3.png",
+            "title":"Commercial property in Abu Dhabi",
+            "text":"In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ..."
+        },
+        {
+            "id":"4",
+            "imgUrl":"/img/Blog/4.png",
+            "title":"Private property in Abu Dhabi",
+            "text":"In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ..."
+        },
+        {
+            "id":"5",
+            "imgUrl":"/img/Blog/5.png",
+            "title":"Commercial property in Abu Dhabi",
+            "text":"In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ..."
+        },
+        {
+            "id":"6",
+            "imgUrl":"/img/Blog/6.png",
+            "title":"Private property in Abu Dhabi",
+            "text":"In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ..."
+        },
+        {
+            "id":"7",
+            "imgUrl":"/img/Blog/7.png",
+            "title":"Commercial property in Abu Dhabi",
+            "text":"In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ..."
+        },
+        {
+            "id":"8",
+            "imgUrl":"/img/Blog/8.png",
+            "title":"Private property in Abu Dhabi",
+            "text":"In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ..."
+        },
+        {
+            "id":"9",
+            "imgUrl":"/img/Blog/9.png",
+            "title":"Commercial property in Abu Dhabi",
+            "text":"In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ..."
+        },
+        {
+            "id":"10",
+            "imgUrl":"/img/Blog/10.png",
+            "title":"Private property in Abu Dhabi",
+            "text":"In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ..."
+        },
+        {
+            "id":"11",
+            "imgUrl":"/img/Blog/11.png",
+            "title":"Commercial property in Abu Dhabi",
+            "text":"In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ..."
+        },
+        {
+            "id":"12",
+            "imgUrl":"/img/Blog/12.png",
+            "title":"Private property in Abu Dhabi",
+            "text":"In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ..."
+        }
+    ]
+}

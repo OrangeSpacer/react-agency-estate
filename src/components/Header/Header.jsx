@@ -5,7 +5,7 @@ import Nav from "./Nav";
 import Button from "../UI/Button/Button";
 const Header = () => {
     const navItems = [
-        {text:"Buy",navLink:"/Blog"},
+        {text:"Buy",navLink:"/Buy"},
         {text:"Blog",navLink:"/Blog"},
         {text:"About",navLink:"/About"},
         {text:"Contact",navLink:"/Contact"}
