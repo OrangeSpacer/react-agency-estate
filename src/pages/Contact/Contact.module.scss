@@ -1,0 +1,21 @@
+.contactInfoBlock{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+}
+
+.contactFormBlock{
+    display: flex;
+    justify-content: center;
+}
+
+
+.contactFormTitle{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 35px;
+    color: #FFFFFF;
+    span{
+        color: #FCD54C;
+    }
+}

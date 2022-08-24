@@ -6,6 +6,7 @@ import { Route, Routes } from "react-router-dom";
 import Blog from "./pages/Blog/Blog";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import Contact from "./pages/Contact/Contact";
 
 function App() {
   const [blogItems,setBlockItems] = useState([])
@@ -59,6 +60,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />}/>
         <Route path="/Blog" element={<Blog blogItems={currentPosts} currentPage={currentPage} postsPerPage={postPerPage} paginate={paginate} totalPosts={blogItems[0]!==undefined ? blogItems[0].length: [].length} searchValue={searchValue} handlerSearchValue={handlerSearchValue} loading={isLoading}/>}/>
+        <Route path="/Contact" element={<Contact/>}/>
       </Routes>
       <Footer footerItems={footerItems} footerSocialLInks={footerSocialLinks}/>
     </div>

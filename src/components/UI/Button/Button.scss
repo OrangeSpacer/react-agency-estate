@@ -4,6 +4,18 @@
     border: none;
     font-weight: 600;
     font-size: 14px;
+    &:disabled{
+        cursor: default;
+        background: #272727;
+        box-shadow: none;
+        transform: none;
+        &:hover{
+            cursor: default;
+            background: #272727;
+            box-shadow: none;
+            transform: none;
+        }
+    }
 }
 
 .modal{

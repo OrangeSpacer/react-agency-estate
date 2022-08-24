@@ -1,0 +1,57 @@
+.contactInfoContent{
+    background: #272727;
+    padding: 81px 58px;
+}
+
+.contactMainAddress{
+    margin: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.contactAddress{
+    margin-top: 33px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #929292;
+}
+
+.contactPhoneBlock{
+    margin: 40px 0 60px 0;
+}
+
+.contactPhoneLink{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 45px;
+    color: #FFFFFF;
+}
+
+.contactEmailBlock{
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.contactSubtitle{
+    margin-right: 5px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.contactBlockText{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #929292;
+}
+
+.contactHoursBlock{
+    display: flex;
+}
