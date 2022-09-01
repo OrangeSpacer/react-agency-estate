@@ -7,9 +7,12 @@ import Blog from "./pages/Blog/Blog";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import Contact from "./pages/Contact/Contact";
+import Buy from "./pages/Buy/Buy";
 
 function App() {
   const [blogItems,setBlockItems] = useState([])
+  const [categoryItems,setCategoryItems] = useState([])
+  const [buyItems,setBuyItems] = useState([])
   const [currentPage,setCurrentPage] = useState(1)
   const [postPerPage] = useState(4)
   const [searchValue,setSearchValue] = useState('')
@@ -33,8 +36,11 @@ function App() {
     (async function(){
       setIsLoading(true)
       const blogItemsBlock = await axios.get(`http://localhost:3002/Blog`)
-
+      const categoryItemsBlock = await axios.get('http://localhost:3002/categoryItems')
+      const buyBlockItems = await axios.get('http://localhost:3002/Buy')
       setBlockItems(prev => [...prev,blogItemsBlock.data])
+      setCategoryItems(prev => [...prev,categoryItemsBlock.data])
+      setBuyItems(prev => [...prev,buyBlockItems.data])
       setIsLoading(false)
     })()
   },[])
@@ -59,8 +65,9 @@ function App() {
       <Header/>
       <Routes>
         <Route path="/" element={<Main />}/>
-        <Route path="/Blog" element={<Blog blogItems={currentPosts} currentPage={currentPage} postsPerPage={postPerPage} paginate={paginate} totalPosts={blogItems[0]!==undefined ? blogItems[0].length: [].length} searchValue={searchValue} handlerSearchValue={handlerSearchValue} loading={isLoading}/>}/>
+        <Route path="/Blog" element={<Blog blogItems={blogItems}  searchValue={searchValue} handlerSearchValue={handlerSearchValue} loading={isLoading}/>}/>
         <Route path="/Contact" element={<Contact/>}/>
+        <Route path="/Buy" element={<Buy contentSlider={categoryItems} isLoading={isLoading} buyItems={buyItems} currentPage={currentPage} postsPerPage={postPerPage} paginate={paginate} totalPosts={buyItems[0]!==undefined ? buyItems[0].length: [].length}/>}/>
       </Routes>
       <Footer footerItems={footerItems} footerSocialLInks={footerSocialLinks}/>
     </div>

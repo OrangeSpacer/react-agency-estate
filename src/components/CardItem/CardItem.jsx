@@ -19,7 +19,7 @@ const CardItem = ({imgUrl,title,typeHouse,text,loading}) => {
                 </ContentLoader>:
                 <div className={classes.cardItemBlock}>
                     <div className={classes.cardItemImg}>
-                        <img src={imgUrl} alt="houseImg" />
+                        <img src={imgUrl} alt="houseImg"/>
                     </div>
                     <div className={classes.cardItemContent}>
                         {typeHouse && <div className={classes.cardItemType}>{typeHouse}</div>}

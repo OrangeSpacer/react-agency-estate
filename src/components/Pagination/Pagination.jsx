@@ -1,7 +1,7 @@
 import classes from './Pagination.module.scss'
-const Pagination = ({postsPerPage,totalPosts, paginate,currentPage}) => {
+const Pagination = ({jump,currentPage,maxPage}) => {
     const pageNumbers = []
-    for(let i = 1;i <= Math.ceil(totalPosts / postsPerPage);i++){
+    for(let i = 1;i <= maxPage;i++){
         pageNumbers.push(i)
     }
     return (
@@ -11,7 +11,7 @@ const Pagination = ({postsPerPage,totalPosts, paginate,currentPage}) => {
                     key={number} 
                     className={number === currentPage ? classes.paginateItemActive:classes.paginateItem} 
                     onClick={() => {
-                        paginate(number)
+                        jump(number)
                     }}
                 >   
                     {number}

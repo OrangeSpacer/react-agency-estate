@@ -1,0 +1,28 @@
+.titleBlock{
+    position: relative;
+}
+
+.buyTitle{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 100px;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 80px;
+    text-align: center;
+    color: #FFFFFF;
+    span{
+        color: #FCD54C;
+    }
+}
+
+.titleImg{
+    max-width: 100%;
+}
+
+.itemsBlock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

@@ -72,5 +72,67 @@
             "title":"Private property in Abu Dhabi",
             "text":"In Dubai, the final statistics of all transactions related to real estate for the first quarter has been confirmed ..."
         }
+    ],
+    "categoryItems":[
+        {"title":"Commercial","imgPath":"/img/LatestProject/Commercial.png"},
+        {"title":"Villa","imgPath":"/img/LatestProject/Villas.png"},
+        {"title":"Houses","imgPath":"/img/LatestProject/Houses.png"},
+        {"title":"Villa","imgPath":"/img/LatestProject/Villas2.png"}
+    ],
+    "Buy":[
+        {
+            "id":"1",
+            "imgUrl":"/img/Buy/1.png",
+            "title":"Arabian Ranches",
+            "text":"The launch of this community enabled expats to own a luxurious property in Dubai.1 "
+        },
+        {
+            "id":"2",
+            "imgUrl":"/img/Buy/2.png",
+            "title":"Arabian Ranches",
+            "text":"The launch of this community enabled expats to own a luxurious property in Dubai.2 "
+        },
+        {
+            "id":"3",
+            "imgUrl":"/img/Buy/3.png",
+            "title":"Arabian Ranches",
+            "text":"The launch of this community enabled expats to own a luxurious property in Dubai.3 "
+        },
+        {
+            "id":"4",
+            "imgUrl":"/img/Buy/4.png",
+            "title":"Arabian Ranches",
+            "text":"The launch of this community enabled expats to own a luxurious property in Dubai.4 "
+        },
+        {
+            "id":"5",
+            "imgUrl":"/img/Buy/5.png",
+            "title":"Arabian Ranches",
+            "text":"The launch of this community enabled expats to own a luxurious property in Dubai.5 "
+        },
+        {
+            "id":"6",
+            "imgUrl":"/img/Buy/6.png",
+            "title":"Arabian Ranches",
+            "text":"The launch of this community enabled expats to own a luxurious property in Dubai.6 "
+        },
+        {
+            "id":"7",
+            "imgUrl":"/img/Buy/7.png",
+            "title":"Arabian Ranches",
+            "text":"The launch of this community enabled expats to own a luxurious property in Dubai.7 "
+        },
+        {
+            "id":"8",
+            "imgUrl":"/img/Buy/8.png",
+            "title":"Arabian Ranches",
+            "text":"The launch of this community enabled expats to own a luxurious property in Dubai.8 "
+        },
+        {
+            "id":"9",
+            "imgUrl":"/img/Buy/9.png",
+            "title":"Arabian Ranches",
+            "text":"The launch of this community enabled expats to own a luxurious property in Dubai.9 "
+        }
     ]
 }

@@ -19,6 +19,15 @@
     }
     
 }
+
+.cardItemImg{
+    img{
+        width: 350px;
+        height: 329px;
+        object-fit: cover;
+    }
+}
+
 .cardItemTitle{
     margin-top: 40px;
     font-weight: 700;
