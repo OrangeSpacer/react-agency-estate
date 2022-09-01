@@ -12,7 +12,6 @@ const AppartamentsSlider = ({slidesBlock,isLoading}) => {
                 modules={[Pagination]} 
                 pagination={{ clickable: true }}
                 className={classes.appartamentSlider}
-                slidesPerView={4}
                 spaceBetween={20}
                 loop={true}
                 breakpoints ={{
@@ -22,9 +21,9 @@ const AppartamentsSlider = ({slidesBlock,isLoading}) => {
                     1342:{
                         slidesPerView: 3
                     },
-                    768:{
+                    540:{
                         slidesPerView: 2
-                    }
+                    },
                 }}
             >
                 {isLoading ? null:slidesBlock[0].map((item,index) => 
