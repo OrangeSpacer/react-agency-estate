@@ -33,3 +33,17 @@
         }
     }
 }
+
+
+@media screen and (max-width:880px) {
+    .nav__item{
+        padding-top: 15px;
+        a{
+            font-size: 36px;
+        }
+        &:not(:last-child){
+            margin-right: 0px;
+            margin-bottom: 35px;
+        }
+    }
+}

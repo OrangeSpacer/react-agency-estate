@@ -13,10 +13,9 @@ function App() {
   const [blogItems,setBlockItems] = useState([])
   const [categoryItems,setCategoryItems] = useState([])
   const [buyItems,setBuyItems] = useState([])
-  const [currentPage,setCurrentPage] = useState(1)
-  const [postPerPage] = useState(4)
   const [searchValue,setSearchValue] = useState('')
-  const[isLoading,setIsLoading] = useState(true)
+  const [isLoading,setIsLoading] = useState(true)
+  const [burgerOpen,setBurgerOpen] = useState(false)
   const footerItems = [
     {title:'Buy',items:['Apartment in Dubai','House in Dubai','Apartments in Dubai','Loft in Dubai','Penthouse in Dubai','Villa in Dubai'],isButton:false},
     {title:'Services',items:['Property management in Dubai, UAE','Sell ​​property in Dubai, UAE','Rent property in Dubai, UAE','Investments in Dubai, UAE','Real estate for cryptocurrency in Dubai','Moving to Dubai, UAE'],isButton:false},
@@ -48,26 +47,19 @@ function App() {
   const handlerSearchValue = (e) => {
     setSearchValue(e.target.value)
   }
-  
-  const indexOfLastPosts = currentPage * postPerPage
-  const indexOfFirstPost = indexOfLastPosts - postPerPage
-  let currentPosts = []
-  if(blogItems[0]!==undefined){
-    currentPosts =  blogItems[0].slice(indexOfFirstPost,indexOfLastPosts)
-  }
 
-  const paginate = (pageNumber) => {
-    setCurrentPage(pageNumber)
+  const handlerBurger = () => {
+      setBurgerOpen(!burgerOpen)
   }
 
   return (
     <div className={classes.App}>
-      <Header/>
+      <Header burgerOpen={burgerOpen} burgerOpenFunc={handlerBurger}/>
       <Routes>
         <Route path="/" element={<Main />}/>
         <Route path="/Blog" element={<Blog blogItems={blogItems}  searchValue={searchValue} handlerSearchValue={handlerSearchValue} loading={isLoading}/>}/>
         <Route path="/Contact" element={<Contact/>}/>
-        <Route path="/Buy" element={<Buy contentSlider={categoryItems} isLoading={isLoading} buyItems={buyItems} currentPage={currentPage} postsPerPage={postPerPage} paginate={paginate} totalPosts={buyItems[0]!==undefined ? buyItems[0].length: [].length}/>}/>
+        <Route path="/Buy" element={<Buy contentSlider={categoryItems} isLoading={isLoading} buyItems={buyItems}/>}/>
       </Routes>
       <Footer footerItems={footerItems} footerSocialLInks={footerSocialLinks}/>
     </div>
