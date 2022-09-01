@@ -46,3 +46,18 @@
     color: #929292;
     transition: all 0.5s ease;
 }
+
+
+
+@media screen and (max-width: 550px){
+    .cardItemBlock{
+        max-width: 310px;
+    }
+    .cardItemImg{
+        img{
+            width: 310px;
+            height: 329px;
+            object-fit: cover;
+        }
+    }
+}

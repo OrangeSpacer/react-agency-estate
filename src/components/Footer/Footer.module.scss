@@ -19,6 +19,7 @@
     margin-top: 50px;
     display: flex;
     text-align: left;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
@@ -50,4 +51,17 @@
     display: flex;
     align-items: center;
     list-style-type: none;
+}
+
+@media screen and (max-width: 460px) {
+    .footerMoreInfo{
+        flex-direction: column;
+        justify-content: center;
+        &::before{
+            bottom: 120px;
+        }
+    }
+    .footerSocialLinks{
+        padding: 0;
+    }
 }
