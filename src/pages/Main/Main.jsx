@@ -23,10 +23,10 @@ const Main = () => {
         <div>
             <MainSlider />
             <Container>
-                <h2 style={{fontSize: '48px',color: '#FFFFFF',fontWeight: '700',marginTop:'100px',paddingLeft:'350px'}}>
+                <h2 style={{fontSize: '48px',color: '#FFFFFF',fontWeight: '700',marginTop:'100px'}}>
                     Latest projects
                 </h2>
-                <div style={{display:'flex',gap:'20px'}}>
+                <div style={{display:'flex',gap:'20px',flexWrap:'wrap',justifyContent:'center'}}>
                     {projectCarts.map((item,index) => <ProjectCart title={item.title} hoverText={item.hoverText} imgPath={item.imgPath} key={index}/>)}
                 </div>
             </Container>

@@ -11,3 +11,10 @@
 .Author{
     color:#FCD54C;
 }
+
+@media screen and (max-width:548px) {
+    .commentText{
+        padding: 70px 20px;
+        font-size: 20px;
+    }
+}

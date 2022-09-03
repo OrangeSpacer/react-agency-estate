@@ -11,7 +11,7 @@ const Faq = () => {
     ]
     return (
         <SmallContainer>
-            <h2 className={classes.fawTitle}>
+            <h2 className={classes.faqTitle}>
                 FAQ
             </h2>
             <Accordion content={AccordionContent}/>

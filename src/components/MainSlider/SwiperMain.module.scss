@@ -32,7 +32,7 @@
 .navigation{
     z-index: 10000;
     position: absolute;
-    left: 25%;
+    left: 10px;
     bottom: 47px;
 }
 
@@ -91,4 +91,51 @@
     bottom: 0px;
     padding: 60px;
     max-width: 1080px;
+}
+
+
+@media screen and (max-width:1110px) {
+    .slidesContent{
+        width: 100%;
+        justify-content: space-around;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .navigation{
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 0px;
+    }
+    .content{
+        img{
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    .content{
+        font-size: 20px;
+        width: 100%;
+        line-height: 30px;
+        text-align: center;
+        img{
+            display: none;
+        }
+    }
+    .slidesContent{
+        bottom: 0;
+        padding: 20px;
+    }
+    .img{
+        width: 100%;
+        max-width: 100%;
+        object-fit: cover;
+        height: 700px;
+    }
+    .navigation{
+        bottom: 28%;
+        left: 60px;
+        transform: none;
+    }
 }

@@ -8,7 +8,7 @@ const Contact = () => {
     return (
         <Container>
             <div className={classes.contactBlock}>
-                <Title title="Contact"/>
+                <Title title="Contact" paddingTop="120"/>
                 <div>
                     <Map/>
                 </div>

@@ -1,7 +1,7 @@
 import classes from './Title.module.scss'
-const Title = ({title}) => {
+const Title = ({title,paddingTop}) => {
     return (
-        <h2 className={classes.title}>
+        <h2 className={classes.title} style={{paddingTop:`${paddingTop}px`}}>
             {title}
         </h2>
     );

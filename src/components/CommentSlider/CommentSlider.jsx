@@ -27,6 +27,9 @@ const CommentSlider = () => {
             },
             768:{
                 slidesPerView: 2
+            },
+            320:{
+                slidesPerView: 1
             }
         }}
         className={classes.commentSlider}
