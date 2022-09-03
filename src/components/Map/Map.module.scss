@@ -2,3 +2,9 @@
     width: 100%;
     height: 768px;
 }
+
+@media screen and (max-width:768px) {
+    .mapItem{
+        height: 500px;
+    }
+}

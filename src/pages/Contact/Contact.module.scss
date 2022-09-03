@@ -19,3 +19,12 @@
         color: #FCD54C;
     }
 }
+
+
+@media screen and (max-width: 768px) {
+    .contactInfoBlock{
+        position: relative;
+        left: 0;
+        text-align: center;
+    }
+}

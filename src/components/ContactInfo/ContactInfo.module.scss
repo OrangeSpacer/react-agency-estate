@@ -55,3 +55,25 @@
 .contactHoursBlock{
     display: flex;
 }
+
+
+@media screen and (max-width: 768px) {
+    .contactInfoContent{
+        padding: 81px 0;
+    }
+    .contactEmailBlock{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contactHoursBlock{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .contactPhoneLink{
+        font-size: 25px;
+    }
+}

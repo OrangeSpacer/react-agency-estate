@@ -1,5 +1,6 @@
 .formInputBlock{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -36,5 +37,26 @@
     color: #ffff;
     &::placeholder{
         color: #929292;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .formInput{
+        width: 275px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .formInputBlock{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .formInputContent{
+        width: 100%;
+    }
+    .formInput{
+        width:-webkit-fill-available;
     }
 }
