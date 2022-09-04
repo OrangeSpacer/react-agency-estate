@@ -3,7 +3,7 @@ import classes from './Header.module.scss'
 import {Link} from 'react-router-dom'
 import Nav from "./Nav";
 import Button from "../UI/Button/Button";
-const Header = ({burgerOpen,burgerOpenFunc}) => {
+const Header = ({burgerOpen,burgerOpenFunc,setModal}) => {
     const navItems = [
         {text:"Buy",navLink:"/Buy"},
         {text:"Blog",navLink:"/Blog"},
@@ -20,7 +20,7 @@ const Header = ({burgerOpen,burgerOpenFunc}) => {
                 </ul>
             </nav>
             <div className={classes.header__contact}>
-                <Button text='Book a consultation' click={() => console.log('click')} type='modal'/>
+                <Button text='Book a consultation' click={setModal} type='modal'/>
                 <a href="tel:72126742510" className={classes.header__phone}>
                     +7 (212) 674-25-10
                 </a>

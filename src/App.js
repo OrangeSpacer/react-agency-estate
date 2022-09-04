@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Contact from "./pages/Contact/Contact";
 import Buy from "./pages/Buy/Buy";
+import ModalForm from "./components/UI/ModalForm/ModalForm";
 
 function App() {
   const [blogItems,setBlockItems] = useState([])
@@ -16,6 +17,7 @@ function App() {
   const [searchValue,setSearchValue] = useState('')
   const [isLoading,setIsLoading] = useState(true)
   const [burgerOpen,setBurgerOpen] = useState(false)
+  const [modalOpen,setModalOpen] = useState(false)
   const footerItems = [
     {title:'Buy',items:['Apartment in Dubai','House in Dubai','Apartments in Dubai','Loft in Dubai','Penthouse in Dubai','Villa in Dubai'],isButton:false},
     {title:'Services',items:['Property management in Dubai, UAE','Sell ​​property in Dubai, UAE','Rent property in Dubai, UAE','Investments in Dubai, UAE','Real estate for cryptocurrency in Dubai','Moving to Dubai, UAE'],isButton:false},
@@ -52,9 +54,13 @@ function App() {
       setBurgerOpen(!burgerOpen)
   }
 
+  const modalHandler = () => {
+    setModalOpen(!modalOpen)
+  }
+
   return (
     <div className={classes.App}>
-      <Header burgerOpen={burgerOpen} burgerOpenFunc={handlerBurger}/>
+      <Header burgerOpen={burgerOpen} burgerOpenFunc={handlerBurger} setModal={modalHandler}/>
       <Routes>
         <Route path="/" element={<Main />}/>
         <Route path="/Blog" element={<Blog blogItems={blogItems}  searchValue={searchValue} handlerSearchValue={handlerSearchValue} loading={isLoading}/>}/>
@@ -62,6 +68,7 @@ function App() {
         <Route path="/Buy" element={<Buy contentSlider={categoryItems} isLoading={isLoading} buyItems={buyItems}/>}/>
       </Routes>
       <Footer footerItems={footerItems} footerSocialLInks={footerSocialLinks}/>
+      <ModalForm modalOpen={modalOpen} setModal={modalHandler}/>
     </div>
   );
 }
