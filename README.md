@@ -1,4 +1,4 @@
-# react-agenct-eastate
+# react-agency-eastate
 
 Многостраничный сайт по продаже недвижимости.
 
