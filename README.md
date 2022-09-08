@@ -18,8 +18,14 @@
 
 # Доступные сценарии запуска
 
+* npm run dev
+  - Запускает локальную API на http://localhost:3002 и само приложение на http://localhost:3000
+
 * npm run start
    - Заупскает приложении на http://localhost:3000
+
+* npm run server 
+   - Запускает API на http://localhost:3002
 
 * npm run build
    - Создает билд приложения для деплоя на сервер
